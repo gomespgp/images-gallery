@@ -8,6 +8,7 @@ const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
 
 const App = () => {
   const [word, setWord] = useState('');
+  const [images, setImages] = useState([]);
 
   const handleSearchSubmit = (e) => {
     // Avoinding browser to reload
@@ -18,7 +19,8 @@ const App = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        setImages([data, ...images]);
+        console.log(images);
       })
       .catch((err) => {
         console.log(err);

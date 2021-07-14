@@ -1,6 +1,6 @@
 FROM python:3.8-alpine
 
-WORKDIR /images_gallery_api
+WORKDIR /app
 
 EXPOSE 5050
 

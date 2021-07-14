@@ -1,6 +1,6 @@
 FROM node:16-alpine3.11
 
-WORKDIR /images_gallery_frontend
+WORKDIR /app
 
 EXPOSE 3000
 
